@@ -21,7 +21,6 @@ body {
 body img {
   max-width: 100%;
 }
-
 .hero-wrap {
   padding: 0;
   height: 100vh;
@@ -29,8 +28,17 @@ body img {
   background-image: url('../img/feels4.gif');
   background-size: cover;
 }
+@media screen and (max-width: 600px) {
+  .hero-wrap {
+    height: 50vh;
+  }
+}
+
 .caps {
   text-transform: uppercase;
+}
+.performances {
+  font-size: 18px;
 }
 .hero {
   width: 100%;
@@ -55,14 +63,19 @@ h1, h2, h3 {
   font-size: 48px;
 }
 h3 {
-  font-size: 28px;
+  font-size: 32px;
   padding: 14px 0;
   margin-bottom: 20px;
+  text-transform: capitalize;
+  text-decoration: underline;
 }
-
+.no-margin {
+  margin-bottom: 0;
+}
 .last-p {
   font-size: 18px;
   margin-top: 10px !important;
+  text-transform: none !important;
 }
 .last-p a, .last-p a:visited {
   color: white;
@@ -72,7 +85,7 @@ h3 {
   color: #a8a8a8;
 }
 .last-paragraph iframe {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .col-md-4 a:hover {
@@ -87,7 +100,7 @@ h3 {
   font-weight: 500;
 }
 .longer-h3 {
-  font-size: 28px;
+  font-size: 26px;
   padding: 14px 0;
 }
 .centered {
@@ -113,8 +126,14 @@ button {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   color: white;
-  background: black ;
+  background: black;
   border: 3px solid white;
+}
+
+button:hover {
+  border: 3px solid transparent;
+  background: white;
+  color: black;
 }
 
 button.home {
@@ -134,5 +153,8 @@ button.home {
   }
   .soundcloud {
     margin-top: 20px;
+  }
+  .last-paragraph iframe {
+    display: none;
   }
 }
