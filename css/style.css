@@ -32,13 +32,16 @@ body img {
   .hero-wrap {
     height: 50vh;
   }
+  .ticket-top {
+    margin-top: 30px;
+  }
 }
 
 .caps {
   text-transform: uppercase;
 }
 .performances {
-  font-size: 18px;
+  text-decoration: none;
 }
 .hero {
   width: 100%;
