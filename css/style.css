@@ -21,6 +21,11 @@ body {
 body img {
   max-width: 100%;
 }
+.audio-player {
+  text-indent: -9999px;
+  position: fixed;
+}
+
 .hero-wrap {
   padding: 0;
   height: 100vh;
